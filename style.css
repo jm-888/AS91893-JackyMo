@@ -10,7 +10,7 @@
     width: 100%;
     padding: 12px 0;
     background: #ecf0f3;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); W3school box shadow use for all shadows
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* W3school box shadow use for all shadows */
   }
   nav .menu{
     margin: auto;
@@ -34,34 +34,40 @@
     text-decoration: none;
     font-size: 18px;
     color: #31344b;
-    font-weight: 600; #MAKE TEXT BOLD
-    display: inline-flex;
+    font-weight: 600; /*MAKE TEXT BOLD*/
     padding: 10px 12px;
     position: relative;
-    transition: all 0.3s ease;
   }
   
   
   .center{
     position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+    transform: scale(1.14);
+    transform: translate(1000px, 100px);
+    text-align: left;
   }
-  .upper{
-    font-size: 40px;
+  .left_image{
+    position: absolute;
+    transform: translate(-650px, -65px);
+  }
+  .upper{ /* bubbles fandom text */
+    font-size: 50px;
     font-weight: 600;
     color: #31344b;
+  }
+  .upper2{  /* the yellow text beneath 'Bubbles Fandom'*/
+    font-size: 40px;
+    font-weight: 600;
+    color: #EAC472;
   }
   .lower{
-    font-size: 40px;
+    font-size: 18px;
     font-weight: 600;
-    color: #31344b;
+    color: #383b52;
+    width: 550px;/*makes the paragraph square and structured row by row*/
   }
   .menu ul a:hover{
-    color: #3498db;
+    color: #eecf6a;
   }
   
   #check{
