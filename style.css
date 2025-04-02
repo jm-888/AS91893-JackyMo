@@ -39,24 +39,27 @@
     position: relative;
   }
   
-  
   .center{
     position: absolute;
-    transform: scale(1.14);
     transform: translate(1000px, 100px);
     text-align: left;
   }
   .left_image{
     position: absolute;
-    transform: translate(-650px, -65px);
+    transform: translate(-900px, -90px);
+    filter: drop-shadow(2px 10px 10px #666666); /*shadow for png goes around image*/
+  }
+  .left_image img{
+    height: 600px;
+    width: 850px;
   }
   .upper{ /* bubbles fandom text */
-    font-size: 50px;
+    font-size: 100px;
     font-weight: 600;
     color: #31344b;
   }
   .upper2{  /* the yellow text beneath 'Bubbles Fandom'*/
-    font-size: 40px;
+    font-size: 90px;
     font-weight: 600;
     color: #EAC472;
   }
@@ -74,4 +77,18 @@
     display: none;
   }
   
-  
+  .search_bar input[type=text] {
+    position: absolute;
+    transform: translate(-400px, 80px);
+    width: 800px;
+    height: 60px;
+    float: center;
+    padding: 6px;
+    border-color: #666666;
+    border: 4px rgb(180, 180, 180);
+    border-style: solid;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 20px;
+    border-radius: 20px;  
+  }
