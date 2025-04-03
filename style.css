@@ -66,7 +66,7 @@
   .lower{
     font-size: 18px;
     font-weight: 600;
-    color: #383b52;
+    color: #5b5d6b;
     width: 550px;/*makes the paragraph square and structured row by row*/
   }
   .menu ul a:hover{
@@ -79,16 +79,23 @@
   
   .search_bar input[type=text] {
     position: absolute;
-    transform: translate(-400px, 80px);
     width: 800px;
     height: 60px;
     float: center;
     padding: 6px;
-    border-color: #666666;
-    border: 4px rgb(180, 180, 180);
+    border: 4px rgb(211, 211, 211);
     border-style: solid;
     margin-top: 8px;
     margin-right: 16px;
     font-size: 20px;
     border-radius: 20px;  
+  }
+
+  .button {
+    border: none;
+    margin: 70px 2px;
+  }
+  .button img{
+    width: 200px;
+    filter: drop-shadow(3px 9px 7px #666666); /*shadow for png goes around image*/
   }
