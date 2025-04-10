@@ -36,6 +36,8 @@
     margin:0 8px;
     text-decoration: none;
     font-size: 18px;
+    text-align: center;
+    display: flex;
     color: #31344b;
     font-weight: 600; /*MAKE TEXT BOLD*/
     padding: 10px 12px;
@@ -43,7 +45,9 @@
     
   }
   .menu ul a:hover{
-    color: #eecf6a;
+    color: #ffffff;
+    background-color: #a7aab3;
+    border-radius: 10px;
   }
   
   .center{
@@ -71,10 +75,12 @@
     color: #EAC472;
   }
   .lower{
-    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
     font-weight: 600;
     color: #5b5d6b;
-    width: 550px;/*makes the paragraph square and structured row by row*/
+    width: 700px;/*makes the paragraph square and structured row by row*/
   }
   
   
@@ -94,7 +100,7 @@
 
   .button {
     border: none;
-    margin: 70px 2px;
+    margin: 80px 2px;
   }
   .button img{
     width: 200px;
