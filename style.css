@@ -1,108 +1,133 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  body{
-    background: #ecf0f3;
-  }
-  nav{
-    width: 100%;
-    padding: 12px 0;
-    background: #d5d9e2;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* W3school box shadow use for all shadows */
-  }
-  nav .menu{
-    margin: auto;
-    padding: 0 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  nav ul {
-    padding: 0;
-    list-style: none;
-    text-align: center;
-    }
-  .menu .logo img{
-    width: 65px;
-    height: 55px;
-  }
-  .menu ul{
-    list-style: none;
-    display: flex;
-  }
-  .menu ul a{
-    margin:0 8px;
-    text-decoration: none;
-    font-size: 18px;
-    text-align: center;
-    display: flex;
-    color: #31344b;
-    font-weight: 600; /*MAKE TEXT BOLD*/
-    padding: 10px 12px;
-    position: relative;
-    
-  }
-  .menu ul a:hover{
-    color: #ffffff;
-    background-color: #a7aab3;
-    border-radius: 10px;
-  }
-  
-  .center{
-    position: absolute;
-    transform: translate(1000px, 100px);
-    text-align: left;
-  }
-  .left_image{
-    position: absolute;
-    transform: translate(-900px, -90px);
-    filter: drop-shadow(2px 10px 10px #666666); /*shadow for png goes around image*/
-  }
-  .left_image img{
-    height: 600px;
-    width: 850px;
-  }
-  .upper{ /* bubbles fandom text */
-    font-size: 100px;
-    font-weight: 600;
-    color: #31344b;
-  }
-  .upper2{  /* the yellow text beneath 'Bubbles Fandom'*/
-    font-size: 90px;
-    font-weight: 600;
-    color: #EAC472;
-  }
-  .lower{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-size: 20px;
-    font-weight: 600;
-    color: #5b5d6b;
-    width: 700px;/*makes the paragraph square and structured row by row*/
-  }
-  
-  
-  .search_bar input[type=text] {
-    position: absolute;
-    width: 800px;
-    height: 60px;
-    float: center;
-    padding: 6px;
-    border: 4px rgb(211, 211, 211);
-    border-style: solid;
-    margin-top: 8px;
-    margin-right: 16px;
-    font-size: 20px;
-    border-radius: 20px;  
-  }
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  .button {
-    border: none;
-    margin: 80px 2px;
-  }
-  .button img{
-    width: 200px;
-    filter: drop-shadow(3px 9px 7px #666666); /*shadow for png goes around image*/
+body {
+  font-family: sans-serif;
+  background-color: #ecf0f3;
+  color: #31344b;
+  line-height: 1.6;
+}
+
+/* Navigation */
+nav {
+  width: 100%;
+  padding: 12px 0;
+  background: #d5d9e2;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 
+              0 6px 20px rgba(0, 0, 0, 0.19);
+}
+
+nav .menu {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu .logo img {
+  width: 65px;
+  height: 55px;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.menu ul a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  color: #31344b;
+  padding: 10px 12px;
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 10px;
+}
+
+.menu ul a:hover {
+  background-color: #a7aab3;
+  color: #ffffff;
+}
+
+/* Main Content */
+.main-content {
+  max-width: 800px;
+  margin: 4rem auto;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.welcome-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #31344b;
+  margin-bottom: 1rem;
+}
+
+.description {
+  color: #5b5d6b;
+}
+
+/* Footer */
+.footer {
+  background-color: #ffffff;
+  border-top: 1px solid #e5e7eb;
+  padding: 2rem 1rem;
+}
+
+.footer-grid {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 2rem;
+}
+
+.footer-heading {
+  color: #31344b;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.footer ul {
+  list-style: none;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #4b5563;
+  display: block;
+  margin-bottom: 0.5rem;
+  transition: color 0.2s;
+}
+
+.footer a:hover {
+  color: #31344b;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 2rem;
+  color: #6b7280;
+  font-size: 0.875rem;
+}
+
+  .menu ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
   }
