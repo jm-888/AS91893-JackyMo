@@ -360,6 +360,24 @@ float: right;
   object-fit: cover;
 }
 
+
+
+
+/* Fancybox gallery styling */
+[data-fancybox="gallery"] img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  filter: drop-shadow(5px 5px 10px #525252);
+  transition: transform 0.3s ease-in-out;
+}
+
+[data-fancybox="gallery"]:hover img {
+  transform: scale(1.05);
+}
+
 /* Footer */
 .footer {
   background-color: #ffffff;

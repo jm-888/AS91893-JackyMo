@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Bubble's Fandom - Cat Community</title>
   <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+
 </head>
 <body>
   <header class="header">
@@ -14,30 +17,56 @@
           <img id="header-img" src="logobubbles.png" alt="logo">
         </div>
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="catoftheweek.html">COW</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
+          <li><a target="_blank" href="index.html">Home</a></li>
+          <li><a target="_blank" href="catoftheweek.html">COW</a></li>
+          <li><a target="_blank" href="gallery.html">Gallery</a></li>
         </ul>
       </div>
     </nav>
   </header>
-
   <main class="main-content">
     <div class="gallery-header">
-      <h2 class="gallery-title">cat <span class="gallery-subtitle">gallery</span></h2>
+      <h2 class="gallery-title">cat<span class="gallery-subtitle">gallery</span></h2>
     </div>
 
     <div class="gallery-container">
       <div class="left-images">
-        <img src="fancycatoncute(1).png" alt="Cat 1" class="gallery-image">
-        <img src="goldeyescat(1).png" alt="Cat 2" class="gallery-image">
+        <a href="fancycatoncute(1).png" data-fancybox="gallery" data-caption="Cat 1">
+          <img src="fancycatoncute(1).png" alt="Cat 1" class="gallery-image">
+        </a>
+        <a href="goldeyescat(1).png" data-fancybox="gallery" data-caption="Cat 2">
+          <img src="goldeyescat(1).png" alt="Cat 2" class="gallery-image">
+        </a>
       </div>
       <div class="right-image">
-        <img src="stackredcats(1).png" alt="Cat 3" class="gallery-image">
+        <a href="stackredcats(1).png" data-fancybox="gallery" data-caption="Cat 3">
+          <img src="stackredcats(1).png" alt="Cat 3" class="gallery-image">
+        </a>
       </div>
     </div>
   </main>
 
+  <!-- Fancybox -->
+  <script>
+    Fancybox.bind('[data-fancybox="gallery"]', {
+        Carousel: {
+            transition: "slide",
+        },
+        Images: {
+            protected: true,
+            Panzoom: {
+                maxScale: 3,
+                panMode: "mousemove",
+                mouseMoveFactor: 1.1,
+                mouseMoveFriction: 0.12,
+            },
+        },
+        showClass: "f-fadeIn",
+    });
+</script>
+
+
+  <!-- footer -->
   <footer class="footer">
     <div class="footer-grid">
       <div>
@@ -67,5 +96,5 @@
       © 2025 Bubbles Fandom. No rights reserved.
     </div>
   </footer>
-</body>
-</html>
+
+ 
