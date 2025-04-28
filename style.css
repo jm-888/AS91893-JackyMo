@@ -21,7 +21,7 @@ nav {
 }
 
 nav .menu {
-  max-width: 925px;
+  max-width: 1100px;
   display: flex;
   align-items: center;
   justify-content: space-between;
